@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.player div button{
+    cursor: pointer;
+    padding:10px;
+    width: 50%;
+    border-radius: 5px;
+    background-color:wheat;
+    transition: 0.5s;
+}
+.player input{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(211, 64, 64);
+    font-size: 15px;
+}
+.game{
+    width: 498px;
+    height: 507px;
+    background-color: white;
+    display: flex;
+    flex-wrap:wrap;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:150px;
+    gap:10px;
+
+}
+::-webkit-input-placeholder { /* Edge */
+    color: rgb(0, 0, 0);
+  }
+  input[type="text"]
+{
+    font-size:20px;
+}
+.player div button:hover{
+    transform: scale(1.1);
+}
+.game > .box{
+   
+    border: 1px solid black;
+    width: 166px;
+    height: 169px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 100px;
+}
+.game>.box:hover{
+    background-color: rgb(138, 123, 112);
+
+}
+.player>div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-between;
+}
